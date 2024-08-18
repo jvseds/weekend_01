@@ -11,73 +11,124 @@
 
 <body>
 
-    <header class="box">
-        <section class="logo">
-        <img src="./images/header_images/logo-food.png" alt="FOODI logo">
-        </section>
+    <header>
 
-        <!-- divide into 2 navigation bars, one on the middle of the header (right-nav) and one on the left (left-nav)-->
-        <nav class="nav" id="right-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Offers</a></li>
-            </ul>
-        </nav>
-        <nav class="nav" id="left-nav">
-            <ul>
-                <li><a href="#"><img src="./images/header_images/fi-rr-icon-search.png" alt="icon of a magnifier"></a></li>
-                <li><a href="#"><img src="./images/header_images/fi-rr-shopping-bag.png" alt="icon of a shopping bag"></a></li>
-                <li>
-                    <button type="button" class="button">
-                        <a href="#">
-                            <span class="button-img" id="contact-button-img">
-                                <img   src="./images/header_images/fi-rr-phone-call.png" alt="icon of a phone">
-                            </span>
-                            <span class="button-text" id="contact-button-text">Contact</span>
-                        </a>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+        <section class="container">
+            <!-- logo -->
+            <article>
+                <span>
+                    <img src="./images/header_images/logo-food.png" alt="FOODI logo">
+                </span>
+            </article>
+
+            <!-- left navbar -->
+             <article>
+                <nav id="navbar-right">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                 </nav>
+             </article>
+             
+             <!-- right navbar -->
+              <article>
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="./images/header_images/fi-rr-icon-search.png" alt="search icon - magnifier"></a></li>
+                        <li><a href="#"><img src="./images/header_images/fi-rr-shopping-bag.png" alt="shopping bag icon"></a></li>
+                        <li><a href="#">
+                            <article class="button" id="contact-button">
+                                <span class="button">
+                                    <img src="./images/header_images/fi-rr-phone-call.png" alt="phone icon">
+                                </span>
+                                <span class="button">Contact</span>
+                            </article>
+                        </a></li>
+                    </ul>
+                </nav>
+              </article>
+            
+        </section>
 
     </header>
 
     <main>
-        <!-- main description and welcoming message -->
-        <section class="container">
-            <!-- text and buttons on right side (screen view point) -->
-            <section class="description-box" id="box-right">
-                <h1>Dive into the Delights of Delectable <span id="food-green">Food</span></h1>
-                <p>Where each plate weaves a story of culinary mastery and passionate craftsmanship</p>
-                <ul>
-                    <li>
-                        <span class="button">
-                            <span class="button-text" id="order-button">Order Now</span>
-                        </span>
-                    </li>
-                    <li>
+            <!-- welcome headings and photo -->
+            <section class="container" id="main-container">
+                <!-- welcome - left side - text and buttons -->
+                <article class="subheaders-class">
+                    <!-- main header and text -->
+                    
+                    <h1>Dive into Delights of Delectable <span id="green-header-text">Food</span></h1>
+                    
+                    <p>
+                        Where each plate weaves a story of culinary mastery and passionate craftsmanship
+                    </p>
+                    <!-- buttons -->
+                    <ul>
+                        <li><a href="#">
+                            <span class="button" id="order-button">Order Now</span>
+                        </a></li>
+                        <li><a href="#">
+                            <article class="button">
+                                <span class="button">Watch Video</span>
+                                <span class="button"><img class="button" id="video-button-img" src="./images/desc_images/play-button.png" alt="play button sign"></span>
+                            </article>
+                        </a></li>
+                    </ul>
+                </article>
+                <!-- welcome - right side - large image -->
+                <article>
+                    <img id="main-image" src="./images/desc_images/desc-left-img.png" alt="a client holding dishes">
+                </article>
+             </section>
+
+             <!-- Popular categories -->
+            <article class="subheaders-class">
+                <h4 id="subheader">Customers Favorites</h4>
+                <h2>Popular Categories</h2>
+            </article>
+
+            <section class="container">
+                <!-- dishes menu -->
+                <article class="dishes">
+                    <article>
                         <a href="#">
-                            <span class="button" id="video-button">
-                                <span class="button-text" id="video-button-text">
-                                    Watch Now
-                                </span>
-                                <span class="button-img" id="video-button-img">
-                                    <img src="./images/desc_images/play-button.png" alt="play video icon">
-                                </span>
-                            </span>
+                            <img src="./images/ctgr_images/burger.png" alt="burger image">
+                            <p class="dish-cat">Main Dishes</p>
+                            <p>(86 dishes)</p>
                         </a>
-                    </li>
-                </ul>
-            </section>
-            <!-- picture on left (screen-view-point) -->
-            <section class="description-box" id="box-left">
-                    <img src="./images/desc_images/desc-left-img.png" alt="a client holding our delicacies">
-            </section>
+                    </article>
 
-        </section>
+                    <article>
+                        <a href="#">
+                            <img src="./images/ctgr_images/sandwich.png" alt="sandwich image">
+                            <p class="dish-cat">Breakfast</p>
+                            <p>(12 breakfasts)</p>
+                        </a>
+                    </article>
 
+                    <article>
+                        <a href="#">
+                            <img src="./images/ctgr_images/icecream.png" alt="ice cream">
+                            <p class="dish-cat">Desserts</p>
+                            <p>(48 desserts)</p>                            
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="#">
+                            <img src="./images/ctgr_images/orange-juce.png" alt="orange juice">
+                            <p class="dish-cat">Browse All</p>
+                            <p>(255 items)</p>
+                        </a>                        
+                    </article>
+                </article>
+
+              </section>
     </main>
 
     <footer>
